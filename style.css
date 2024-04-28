@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right , #2fc9a3 , #13a0aa);
+}
+.container{
+    height: 60vh;
+    background-color: #fff;
+    width: 60%;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.container .left{
+    width: 45%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+.container .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right{
+    width: 55%;
+    height: 100%;
+    padding:2rem 1rem;
+    
+}
+.right-r1{
+    background-color: white;
+    padding: 10px 0px;
+    text-align: center;
+} 
+.right-r1 h1{
+    color: #2fc9a3;
+    font-family:"Poppins";
+    font-size: 40px;
+}
+.right-r1 p{
+    margin-top: 5px;
+    color: grey;
+    font-size: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.right-r2{
+    /* border: 1px solid black; */
+    min-height: 200px;
+    padding: 10px 2px;
+    width: 80%;
+    margin: 0px 66px;
+}
+.right-r2 .name{
+    
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+.right-r2 .email{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.gender{
+    margin-top: 10px;
+    /* border: 1px solid black; */
+    padding: 10px 5px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.gender label{
+    font-size: 12px;
+    width: 33%;
+    /* background-color: red; */
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.gender .ins-gender1{
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.gender .ins-gender2{
+    /* border: 1px solid red; */
+    padding: 5px 0px;
+    width: 33%;
+    display: flex;
+}
+.gender .ins-gender2 label{
+ margin-left: 5px;
+ text-transform: capitalize;
+ font-size: 10px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.gender .ins-gender2a{
+    padding: 5px 0px;
+    width: 33%;
+    display: flex;
+    /* border: 1px solid red; */
+}
+.gender .ins-gender2a label{
+    margin-left: 5px;
+    text-transform: capitalize;
+    font-size: 10px;
+       text-transform: capitalize;
+       font-weight: 600;
+       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.birth , .city , .country{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.birth label , .city label , .country label , .right-r2 .name label,.right-r2 .email label{
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: -2px;
+    width: 25%;
+}
+
+
+
+
+.right-r2 .name input, .right-r2 .email input, .birth input , .city input , .country input{
+    width: 75%;
+  
+    /* background-color: red; */
+    border: none;
+    outline: none;
+    background-color: #eeeeeeda;
+    border-radius: 4px;
+    padding: 5px;
+}
+.birth input{
+    color: #eeeeeeda;
+}
+.gender{
+    display: flex;
+}
+.ins-gender2{
+    display: flex;
+}
+
+.button{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+}
+.button .emp{
+    width: 25%;
+}
+.button .btn{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.button .btn button{
+    width: 48%;
+    font-size: 13px;
+    text-transform: capitalize;
+    padding: 7px 15px;
+    color: white;
+    background-color: #13a0aa;
+    border:none;
+    outline: none;
+    border-radius: 3px;
+}
+.button .btn button:hover{
+    background-color: #2fc9a3;
+}
+.button .btn button:nth-child(1)
+{
+    background-color: #322a59;
+}
+.button .btn button:nth-child(1):hover{
+    background-color: #2fc9a3;
+}
+
+@media (min-width:300px)  and (max-width:800px){ 
+   body{
+    width: 100%;
+    height: 100vh;
+   }
+.container{
+    height: 90vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 10px;
+}
+.container .left{
+    width: 100%;
+    height: 40%;
+}
+.container .left img{
+    border-radius: 0px 0px 10px 10px;
+    width: 100%;
+    height: 100%;
+}
+.right{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin-top: 50px;
+}
+.right-r1{
+    background-color: white;
+    padding: 5px 0px;
+    text-align: center;
+} 
+.right-r1 h1{
+    color: #2fc9a3;
+    font-family:"Poppins";
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.right-r1 p{
+    margin-top: 3px;
+    color: grey;
+    font-size: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.right-r2{
+    min-height: 200px;
+    padding: 10px 0px;
+    width: 80%;
+    margin: 0px auto;
+}
+.right-r2 .name{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.gender{
+    padding: 5px 5px 5px 0px;
+}
+}
+  /* @media only screen and (max-width:1000px){
+    .right .right-r1 h1{
+        font-size: 25px;
+    }
+}
+*/
+@media (min-width: 801px) and (max-width: 1000px)
+{
+    
+    .container .left{
+        width: 75%;
+        height: 100%;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .container .left img{
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
+    }
+    .right{
+        width: 100%;
+        height: 100%;
+        padding:3rem 1rem;
+    }
+    .right-r2{
+        min-height: 300px;
+        padding: 10px 2px;
+        width: 100%;
+        margin: 0px;
+    }
+    .birth label , .city label , .country label , .right-r2 .name label,.right-r2 .email label{
+        font-size: 14px;
+        width: 25%;
+    }
+    
+    .right-r2 .name input, .right-r2 .email input, .birth input , .city input , .country input{
+        padding: 8px;
+    }
+    
+    .gender label{
+        font-size: 14px;
+    }
+    .gender .ins-gender2 label{
+        font-size: 14px;
+        font-weight: 500;
+       }
+       .gender .ins-gender2a label{
+        font-size: 14px;
+        font-weight: 500;
+       }
+
+       .button{
+        margin-top: 13px;
+        }
+        .button .emp{
+        width: 25%;
+        }
+        .button .btn button{
+        padding: 10px 15px;
+        }
+        .birth label{
+            font-size: 14px;
+            flex-wrap: wrap;
+            width: 24%;
+        }
+       
+   
+}
+
+@media (min-width: 900px) and (max-width: 1100px){
+    .right{
+        width: 100%;
+        height: 100%;
+        padding:3rem 1rem;
+    }
+    .right-r2{
+        min-height: 300px;
+        padding: 10px 2px;
+        width: 100%;
+        margin: 0px;
+    }   
+}
